@@ -1,0 +1,6 @@
+-r requirements.txt
+
+# Test-only packages. packaging and Pygments are already pinned above.
+iniconfig==2.3.1
+pluggy==1.7.0
+pytest==9.2.0

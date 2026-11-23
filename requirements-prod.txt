@@ -1,0 +1,15 @@
+# Application packages to add to the existing production virtual environment.
+# This file is not a full environment. Do not install it on the development Mac
+# in place of requirements.txt, and do not install requirements.txt on the VM.
+#
+# Already present on VM 105 and intentionally absent here:
+#   voxcpm==2.0.3
+#   torch==2.5.1+cpu
+#
+# Phase 9, after explicit approval, should dry-run this file inside
+# /opt/voxcpm2/venv and stop if the resolver wants to replace torch or voxcpm.
+# Gradio's Linux dependency set was not resolved during preparation.
+
+gradio==6.32.0
+python-dotenv==1.2.4
+psutil==7.1.3

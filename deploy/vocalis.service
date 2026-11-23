@@ -1,0 +1,19 @@
+[Unit]
+Description=Vocalis AI Voice Studio
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ryan
+Group=ryan
+WorkingDirectory=/opt/vocalis
+EnvironmentFile=/opt/vocalis/vocalis.env
+ExecStart=/opt/voxcpm2/venv/bin/python /opt/vocalis/app.py
+Restart=on-failure
+RestartSec=10
+# Stop waits up to five minutes for the current generation, then a short margin.
+TimeoutStopSec=330
+
+[Install]
+WantedBy=multi-user.target

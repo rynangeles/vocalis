@@ -1,0 +1,16 @@
+# Paths that must not be copied from a development checkout to /opt/vocalis.
+.git
+.venv
+venv
+.env
+data/
+output/
+uploads/
+logs/
+.pytest_cache
+.mypy_cache
+.ruff_cache
+__pycache__/
+*.pyc
+.DS_Store
+.gradio/
